@@ -17,7 +17,7 @@ pip install -e ".[dev]"
 To build the documentation site locally:
 
 ```bash
-pip install -e ".[docs]"
+python -m pip install -r requirements-docs.txt
 python -m mkdocs serve
 ```
 
@@ -35,7 +35,7 @@ python -m pytest tests
 For documentation work:
 
 ```bash
-pip install -e ".[docs]"
+python -m pip install -r requirements-docs.txt
 python -m mkdocs serve
 ```
 

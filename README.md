@@ -415,6 +415,18 @@ This package currently focuses on:
 - directional analysis and mapping
 - trend and evaluation utilities that are straightforward to use from Python data workflows
 
+## Open Source Contributions
+
+Open source contributions are welcome.
+
+You can contribute through:
+- source code improvements and new features
+- bug fixes and test coverage
+- documentation, examples, and tutorial content
+- packaging and deployment improvements
+
+For small changes, open a pull request directly. For larger source-code changes, open an issue first so the scope and approach can be discussed before implementation.
+
 ## Development
 
 Run tests from the package root:
@@ -437,7 +449,7 @@ mkdocs.yml
 To build it locally:
 
 ```bash
-pip install -e ".[docs]"
+python -m pip install -r requirements-docs.txt
 python -m mkdocs serve
 
 ```
