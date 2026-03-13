@@ -20,13 +20,12 @@ pip install airqoair
 Documentation:
 
 ```text
-https://airqoair-project.github.io/book
+https://wabinyai.github.io/airqoair-project/
 ```
 
-From this monorepo for development:
+From this repository for development:
 
 ```bash
-cd packages/airqoair
 pip install -e ".[dev]"
 ```
 
@@ -421,25 +420,23 @@ This package currently focuses on:
 Run tests from the package root:
 
 ```bash
-cd packages/airqoair
 python -m pytest tests
 ```
 
-If you are working from the repo without installation, point `PYTHONPATH` at `packages/airqoair`, not the repository root.
+If you are working from the repo without installation, point `PYTHONPATH` at the package source directory.
 
 ## Documentation site
 
 A book-style documentation site scaffold is included under:
 
 ```text
-packages/airqoair/docs/
-packages/airqoair/mkdocs.yml
+docs/
+mkdocs.yml
 ```
 
 To build it locally:
 
 ```bash
-cd packages/airqoair
 pip install -e ".[docs]"
 python -m mkdocs serve
 
@@ -448,8 +445,10 @@ python -m mkdocs serve
 Images for the docs can be stored in:
 
 ```text
-packages/airqoair/docs/assets/images/
+docs/assets/images/
 ```
+
+The documentation site deploys automatically to GitHub Pages from `main` via `.github/workflows/deploy-docs.yml` and publishes at `https://wabinyai.github.io/airqoair-project/`.
 
 
 ## .gitignore

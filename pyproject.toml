@@ -45,10 +45,10 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/airqo-platform/AirQo-api"
-Repository = "https://github.com/airqo-platform/AirQo-api"
-Issues = "https://github.com/airqo-platform/AirQo-api/issues"
-Documentation = "https://airqoair-project.github.io/book"
+Homepage = "https://github.com/wabinyai/airqoair-project"
+Repository = "https://github.com/wabinyai/airqoair-project"
+Issues = "https://github.com/wabinyai/airqoair-project/issues"
+Documentation = "https://wabinyai.github.io/airqoair-project/"
 
 [tool.setuptools]
 package-dir = { "" = "airqoair" }

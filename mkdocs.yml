@@ -1,12 +1,13 @@
 site_name: The airqoair book
 site_description: Documentation for the airqoair Python library
-site_url: https://airqoair-project.github.io/book
-repo_url: https://github.com/airqo-platform/AirQo-api
-repo_name: airqo-platform/AirQo-api
-edit_uri: edit/main/packages/airqoair/docs/
+site_url: https://wabinyai.github.io/airqoair-project/
+repo_url: https://github.com/wabinyai/airqoair-project
+repo_name: wabinyai/airqoair-project
+edit_uri: edit/main/docs/
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
+strict: true
 
 theme:
   name: material

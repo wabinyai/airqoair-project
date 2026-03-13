@@ -6,10 +6,9 @@
 pip install airqoair
 ```
 
-## From the Monorepo
+## From This Repository
 
 ```bash
-cd packages/airqoair
 pip install -e ".[dev]"
 ```
 
@@ -18,19 +17,17 @@ pip install -e ".[dev]"
 To build the documentation site locally:
 
 ```bash
-cd packages/airqoair
 pip install -e ".[docs]"
 python -m mkdocs serve
 ```
 
-The site configuration lives in `packages/airqoair/mkdocs.yml`.
+The site configuration lives in `mkdocs.yml`.
 
 ## Recommended local workflow
 
 For package work:
 
 ```bash
-cd packages/airqoair
 pip install -e ".[dev]"
 python -m pytest tests
 ```
@@ -38,7 +35,6 @@ python -m pytest tests
 For documentation work:
 
 ```bash
-cd packages/airqoair
 pip install -e ".[docs]"
 python -m mkdocs serve
 ```
@@ -48,17 +44,21 @@ python -m mkdocs serve
 To build the site locally without publishing it:
 
 ```bash
-cd packages/airqoair
-python scripts/deploy_docs.py --build-only
+python -m mkdocs build --strict
 ```
 
-To publish the documentation from the package root to the `gh-pages` branch:
+The repository publishes docs automatically from `main` using GitHub Actions:
 
 ```bash
-cd packages/airqoair
-python scripts/deploy_docs.py --site-url https://airqoair-project.github.io/book/
+.github/workflows/deploy-docs.yml
 ```
 
-This command uses `mkdocs gh-deploy`, so GitHub Pages must be configured to serve from the `gh-pages` branch.
+In the repository settings, GitHub Pages should be configured to use `GitHub Actions` as the source.
 
-If the final public URL differs from `https://airqoair-project.github.io/book/`, pass the correct URL with `--site-url`.
+For this repository, the published site URL is:
+
+```text
+https://wabinyai.github.io/airqoair-project/
+```
+
+If you need the site to live at `https://airqoair-project.github.io/book/`, that requires a different GitHub owner/repository setup or a custom domain configuration outside this repository.
