@@ -55,6 +55,8 @@ The repository publishes docs automatically from `main` using GitHub Actions:
 
 In the repository settings, GitHub Pages should be configured to use `GitHub Actions` as the source.
 
+Do not use `Deploy from a branch` with the `docs/` folder for this site. That serves the raw Markdown files and bypasses the MkDocs Material theme, which makes the published site look unstyled compared with `mkdocs serve`.
+
 For this repository, the published site URL is:
 
 ```text
